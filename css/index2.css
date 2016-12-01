@@ -1,0 +1,715 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #323232;
+}
+a {
+  text-decoration: none;
+  color: #636363;
+}
+ul {
+  list-style: none;
+}
+.public-header {
+  width: 100%;
+  height: 30px;
+  background: #323232;
+}
+.public-header img {
+  float: left !important;
+  margin: 6px 5px 0 15px;
+  width: 58px;
+  height: 18px;
+}
+.public-header ul {
+  min-width: 800px;
+}
+.public-header ul li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 25px;
+}
+.public-header ul li a {
+  color: silver;
+}
+.carousel {
+  width: 100%;
+}
+.carousel img {
+  height: 500px;
+}
+.container-fluid {
+  padding: 0;
+  clear: both;
+  margin-left: 0;
+}
+.container-fluid .box {
+  width: 980px;
+  margin: 0 auto;
+}
+.container-fluid .box1 {
+  height: 150px;
+}
+.container-fluid .box2 {
+  height: 656px;
+}
+.container-fluid .box2 .box2-title {
+  width: 980px;
+  height: 26px;
+  line-height: 26px;
+}
+.container-fluid .box2 .box2-title .title {
+  float: left;
+  font-size: 24px;
+  line-height: 26px;
+}
+.container-fluid .box2 .box2-title ul {
+  float: left;
+  margin-left: 20px;
+}
+.container-fluid .box2 .box2-title ul li {
+  float: left;
+  margin-left: 16px;
+  padding: 0 8px ;
+  font-weight: 700;
+}
+.container-fluid .box2 .box2-title ul li a {
+  color: #323232;
+  font-size: 14px;
+  height: 26px;
+  line-height: 26px;
+}
+.container-fluid .box2 .box2-title ul .current {
+  padding: 0 0 4px;
+  background: url("../img2/tab_curarrow.png") no-repeat center bottom;
+}
+.container-fluid .box2 .box2-title ul .current a {
+  display: block;
+  border-radius: 3px;
+  padding: 0 8px;
+  background: #65b17f;
+  color: #fff;
+  cursor: default;
+}
+.container-fluid .box2 .box2-inner {
+  width: 980px;
+  height: 610px;
+  margin-top: 20px;
+}
+.container-fluid .box2 .box2-inner ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container-fluid .box2 .box2-inner ul .item {
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.container-fluid .box2 .box2-inner ul .item .title {
+  transition: opacity .5s;
+  position: absolute;
+  padding-left: 15px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding-top: 50px;
+  background: url("../img2/pic_titbg.png") repeat-x;
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 500;
+}
+.container-fluid .box2 .box2-inner ul .item .mask {
+  z-index: 199;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  font-size: 0;
+  overflow: hidden;
+  transition: bottom .4s;
+}
+.container-fluid .box2 .box2-inner ul .item .mask .picDesp {
+  position: absolute;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  color: #fff;
+}
+.container-fluid .box2 .box2-inner ul .item .mask .picDesp .fontYaHei {
+  display: block;
+  font-size: 30px;
+  padding: 15px 10px 0;
+}
+.container-fluid .box2 .box2-inner ul .item .mask .picDesp .texts {
+  display: block;
+  line-height: 27px;
+  font-size: 14px;
+  padding: 0 10px 10px;
+  color: #fff;
+}
+.container-fluid .box2 .box2-inner ul .item img {
+  width: 100%;
+  height: 100%;
+  transition: all ease-out 0.4s;
+}
+.container-fluid .box2 .box2-inner ul .item:hover h3 {
+  display: none;
+}
+.container-fluid .box2 .box2-inner ul .item:hover .mask {
+  bottom: 0;
+}
+.container-fluid .box2 .box2-inner ul .item:hover img {
+  transform: scale(1.2, 1.2);
+}
+.container-fluid .box2 .box2-inner ul .item1 {
+  width: 389px;
+  height: 200px;
+}
+.container-fluid .box2 .box2-inner ul .item2 {
+  width: 192px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 394px;
+}
+.container-fluid .box2 .box2-inner ul .item3 {
+  width: 192px;
+  height: 405px;
+  position: absolute;
+  top: 0;
+  left: 591px;
+}
+.container-fluid .box2 .box2-inner ul .item4 {
+  width: 192px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 788px;
+}
+.container-fluid .box2 .box2-inner ul .item5 {
+  width: 192px;
+  height: 405px;
+  position: absolute;
+  top: 205px;
+  left: 0;
+}
+.container-fluid .box2 .box2-inner ul .item6 {
+  width: 389px;
+  height: 200px;
+  position: absolute;
+  top: 205px;
+  left: 197px;
+}
+.container-fluid .box2 .box2-inner ul .item7 {
+  width: 192px;
+  height: 200px;
+  position: absolute;
+  left: 788px;
+  top: 205px;
+}
+.container-fluid .box2 .box2-inner ul .item8 {
+  width: 192px;
+  height: 200px;
+  position: absolute;
+  left: 197px;
+  top: 410px;
+}
+.container-fluid .box2 .box2-inner ul .item9 {
+  width: 192px;
+  height: 200px;
+  position: absolute;
+  left: 394px;
+  top: 410px;
+}
+.container-fluid .box2 .box2-inner ul .item10 {
+  width: 389px;
+  height: 200px;
+  position: absolute;
+  left: 591px;
+  top: 410px;
+}
+.container-fluid .box3 {
+  height: 2954px;
+  margin-top: 60px;
+}
+.container-fluid .box3 .box3-title {
+  width: 980px;
+  height: 26px;
+  line-height: 26px;
+}
+.container-fluid .box3 .box3-title .title {
+  float: left;
+  font-size: 24px;
+  line-height: 26px;
+}
+.container-fluid .box3 .box3-title ul {
+  float: right;
+}
+.container-fluid .box3 .box3-title ul li {
+  float: left;
+  margin-left: 16px;
+  padding: 0 8px ;
+  font-weight: 700;
+}
+.container-fluid .box3 .box3-title ul li a {
+  color: #323232;
+  font-size: 14px;
+  height: 26px;
+  line-height: 26px;
+}
+.container-fluid .box3 .box3-title ul .current {
+  padding: 0 0 4px;
+  background: url("../img2/tab_curarrow.png") no-repeat center bottom;
+}
+.container-fluid .box3 .box3-title ul .current a {
+  display: block;
+  border-radius: 3px;
+  padding: 0 8px;
+  background: #65b17f;
+  color: #fff;
+  cursor: default;
+}
+.container-fluid .box3 .box3-inner .Europelist,
+.container-fluid .box3 .box3-inner .Asialist,
+.container-fluid .box3 .box3-inner .Africalist,
+.container-fluid .box3 .box3-inner .NorthAmericalist,
+.container-fluid .box3 .box3-inner .SouthAmericalist,
+.container-fluid .box3 .box3-inner .Oceanialist,
+.container-fluid .box3 .box3-inner .Antarcticalist {
+  margin-top: 30px;
+}
+.container-fluid .box3 .box3-inner .Europelist .Atitle,
+.container-fluid .box3 .box3-inner .Asialist .Atitle,
+.container-fluid .box3 .box3-inner .Africalist .Atitle,
+.container-fluid .box3 .box3-inner .NorthAmericalist .Atitle,
+.container-fluid .box3 .box3-inner .SouthAmericalist .Atitle,
+.container-fluid .box3 .box3-inner .Oceanialist .Atitle,
+.container-fluid .box3 .box3-inner .Antarcticalist .Atitle {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+}
+.container-fluid .box3 .box3-inner .Europelist .Atitle em,
+.container-fluid .box3 .box3-inner .Asialist .Atitle em,
+.container-fluid .box3 .box3-inner .Africalist .Atitle em,
+.container-fluid .box3 .box3-inner .NorthAmericalist .Atitle em,
+.container-fluid .box3 .box3-inner .SouthAmericalist .Atitle em,
+.container-fluid .box3 .box3-inner .Oceanialist .Atitle em,
+.container-fluid .box3 .box3-inner .Antarcticalist .Atitle em {
+  float: left;
+  font-size: 18px;
+  line-height: 20px;
+}
+.container-fluid .box3 .box3-inner .Europelist .Atitle em a,
+.container-fluid .box3 .box3-inner .Asialist .Atitle em a,
+.container-fluid .box3 .box3-inner .Africalist .Atitle em a,
+.container-fluid .box3 .box3-inner .NorthAmericalist .Atitle em a,
+.container-fluid .box3 .box3-inner .SouthAmericalist .Atitle em a,
+.container-fluid .box3 .box3-inner .Oceanialist .Atitle em a,
+.container-fluid .box3 .box3-inner .Antarcticalist .Atitle em a {
+  font-style: normal;
+  color: #147850;
+}
+.container-fluid .box3 .box3-inner .Europelist .Atitle em a:hover,
+.container-fluid .box3 .box3-inner .Asialist .Atitle em a:hover,
+.container-fluid .box3 .box3-inner .Africalist .Atitle em a:hover,
+.container-fluid .box3 .box3-inner .NorthAmericalist .Atitle em a:hover,
+.container-fluid .box3 .box3-inner .SouthAmericalist .Atitle em a:hover,
+.container-fluid .box3 .box3-inner .Oceanialist .Atitle em a:hover,
+.container-fluid .box3 .box3-inner .Antarcticalist .Atitle em a:hover {
+  text-decoration: underline;
+}
+.container-fluid .box3 .box3-inner .Europelist .Atitle span,
+.container-fluid .box3 .box3-inner .Asialist .Atitle span,
+.container-fluid .box3 .box3-inner .Africalist .Atitle span,
+.container-fluid .box3 .box3-inner .NorthAmericalist .Atitle span,
+.container-fluid .box3 .box3-inner .SouthAmericalist .Atitle span,
+.container-fluid .box3 .box3-inner .Oceanialist .Atitle span,
+.container-fluid .box3 .box3-inner .Antarcticalist .Atitle span {
+  float: left;
+  margin-left: 6px;
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1,
+.container-fluid .box3 .box3-inner .Asialist .line1,
+.container-fluid .box3 .box3-inner .Africalist .line1,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1,
+.container-fluid .box3 .box3-inner .Oceanialist .line1,
+.container-fluid .box3 .box3-inner .Antarcticalist .line1,
+.container-fluid .box3 .box3-inner .Europelist .line2,
+.container-fluid .box3 .box3-inner .Asialist .line2,
+.container-fluid .box3 .box3-inner .Africalist .line2,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2,
+.container-fluid .box3 .box3-inner .Oceanialist .line2,
+.container-fluid .box3 .box3-inner .Antarcticalist .line2 {
+  margin-right: 25px;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1,
+.container-fluid .box3 .box3-inner .Asialist .line1,
+.container-fluid .box3 .box3-inner .Africalist .line1,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1,
+.container-fluid .box3 .box3-inner .Oceanialist .line1,
+.container-fluid .box3 .box3-inner .Antarcticalist .line1,
+.container-fluid .box3 .box3-inner .Europelist .line2,
+.container-fluid .box3 .box3-inner .Asialist .line2,
+.container-fluid .box3 .box3-inner .Africalist .line2,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2,
+.container-fluid .box3 .box3-inner .Oceanialist .line2,
+.container-fluid .box3 .box3-inner .Antarcticalist .line2,
+.container-fluid .box3 .box3-inner .Europelist .line3,
+.container-fluid .box3 .box3-inner .Asialist .line3,
+.container-fluid .box3 .box3-inner .Africalist .line3,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line3,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line3,
+.container-fluid .box3 .box3-inner .Oceanialist .line3,
+.container-fluid .box3 .box3-inner .Antarcticalist .line3 {
+  float: left;
+  width: 310px;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1 ul,
+.container-fluid .box3 .box3-inner .Asialist .line1 ul,
+.container-fluid .box3 .box3-inner .Africalist .line1 ul,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1 ul,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1 ul,
+.container-fluid .box3 .box3-inner .Oceanialist .line1 ul,
+.container-fluid .box3 .box3-inner .Antarcticalist .line1 ul,
+.container-fluid .box3 .box3-inner .Europelist .line2 ul,
+.container-fluid .box3 .box3-inner .Asialist .line2 ul,
+.container-fluid .box3 .box3-inner .Africalist .line2 ul,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2 ul,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2 ul,
+.container-fluid .box3 .box3-inner .Oceanialist .line2 ul,
+.container-fluid .box3 .box3-inner .Antarcticalist .line2 ul,
+.container-fluid .box3 .box3-inner .Europelist .line3 ul,
+.container-fluid .box3 .box3-inner .Asialist .line3 ul,
+.container-fluid .box3 .box3-inner .Africalist .line3 ul,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line3 ul,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line3 ul,
+.container-fluid .box3 .box3-inner .Oceanialist .line3 ul,
+.container-fluid .box3 .box3-inner .Antarcticalist .line3 ul {
+  width: 100%;
+  height: 100%;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1 ul .item,
+.container-fluid .box3 .box3-inner .Asialist .line1 ul .item,
+.container-fluid .box3 .box3-inner .Africalist .line1 ul .item,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1 ul .item,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1 ul .item,
+.container-fluid .box3 .box3-inner .Oceanialist .line1 ul .item,
+.container-fluid .box3 .box3-inner .Antarcticalist .line1 ul .item,
+.container-fluid .box3 .box3-inner .Europelist .line2 ul .item,
+.container-fluid .box3 .box3-inner .Asialist .line2 ul .item,
+.container-fluid .box3 .box3-inner .Africalist .line2 ul .item,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2 ul .item,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2 ul .item,
+.container-fluid .box3 .box3-inner .Oceanialist .line2 ul .item,
+.container-fluid .box3 .box3-inner .Antarcticalist .line2 ul .item,
+.container-fluid .box3 .box3-inner .Europelist .line3 ul .item,
+.container-fluid .box3 .box3-inner .Asialist .line3 ul .item,
+.container-fluid .box3 .box3-inner .Africalist .line3 ul .item,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line3 ul .item,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line3 ul .item,
+.container-fluid .box3 .box3-inner .Oceanialist .line3 ul .item,
+.container-fluid .box3 .box3-inner .Antarcticalist .line3 ul .item {
+  height: 24px;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1 ul .item .hot,
+.container-fluid .box3 .box3-inner .Asialist .line1 ul .item .hot,
+.container-fluid .box3 .box3-inner .Africalist .line1 ul .item .hot,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1 ul .item .hot,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1 ul .item .hot,
+.container-fluid .box3 .box3-inner .Oceanialist .line1 ul .item .hot,
+.container-fluid .box3 .box3-inner .Antarcticalist .line1 ul .item .hot,
+.container-fluid .box3 .box3-inner .Europelist .line2 ul .item .hot,
+.container-fluid .box3 .box3-inner .Asialist .line2 ul .item .hot,
+.container-fluid .box3 .box3-inner .Africalist .line2 ul .item .hot,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2 ul .item .hot,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2 ul .item .hot,
+.container-fluid .box3 .box3-inner .Oceanialist .line2 ul .item .hot,
+.container-fluid .box3 .box3-inner .Antarcticalist .line2 ul .item .hot,
+.container-fluid .box3 .box3-inner .Europelist .line3 ul .item .hot,
+.container-fluid .box3 .box3-inner .Asialist .line3 ul .item .hot,
+.container-fluid .box3 .box3-inner .Africalist .line3 ul .item .hot,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line3 ul .item .hot,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line3 ul .item .hot,
+.container-fluid .box3 .box3-inner .Oceanialist .line3 ul .item .hot,
+.container-fluid .box3 .box3-inner .Antarcticalist .line3 ul .item .hot {
+  float: left;
+  padding-right: 33px;
+  background: url("../img2/icon_hot.png") no-repeat right center;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1 ul .item a,
+.container-fluid .box3 .box3-inner .Asialist .line1 ul .item a,
+.container-fluid .box3 .box3-inner .Africalist .line1 ul .item a,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1 ul .item a,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1 ul .item a,
+.container-fluid .box3 .box3-inner .Oceanialist .line1 ul .item a,
+.container-fluid .box3 .box3-inner .Antarcticalist .line1 ul .item a,
+.container-fluid .box3 .box3-inner .Europelist .line2 ul .item a,
+.container-fluid .box3 .box3-inner .Asialist .line2 ul .item a,
+.container-fluid .box3 .box3-inner .Africalist .line2 ul .item a,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2 ul .item a,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2 ul .item a,
+.container-fluid .box3 .box3-inner .Oceanialist .line2 ul .item a,
+.container-fluid .box3 .box3-inner .Antarcticalist .line2 ul .item a,
+.container-fluid .box3 .box3-inner .Europelist .line3 ul .item a,
+.container-fluid .box3 .box3-inner .Asialist .line3 ul .item a,
+.container-fluid .box3 .box3-inner .Africalist .line3 ul .item a,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line3 ul .item a,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line3 ul .item a,
+.container-fluid .box3 .box3-inner .Oceanialist .line3 ul .item a,
+.container-fluid .box3 .box3-inner .Antarcticalist .line3 ul .item a {
+  display: inline-block;
+  float: left;
+  color: #323232;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  list-style: none;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1 ul .item a .en,
+.container-fluid .box3 .box3-inner .Asialist .line1 ul .item a .en,
+.container-fluid .box3 .box3-inner .Africalist .line1 ul .item a .en,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1 ul .item a .en,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1 ul .item a .en,
+.container-fluid .box3 .box3-inner .Oceanialist .line1 ul .item a .en,
+.container-fluid .box3 .box3-inner .Antarcticalist .line1 ul .item a .en,
+.container-fluid .box3 .box3-inner .Europelist .line2 ul .item a .en,
+.container-fluid .box3 .box3-inner .Asialist .line2 ul .item a .en,
+.container-fluid .box3 .box3-inner .Africalist .line2 ul .item a .en,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2 ul .item a .en,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2 ul .item a .en,
+.container-fluid .box3 .box3-inner .Oceanialist .line2 ul .item a .en,
+.container-fluid .box3 .box3-inner .Antarcticalist .line2 ul .item a .en,
+.container-fluid .box3 .box3-inner .Europelist .line3 ul .item a .en,
+.container-fluid .box3 .box3-inner .Asialist .line3 ul .item a .en,
+.container-fluid .box3 .box3-inner .Africalist .line3 ul .item a .en,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line3 ul .item a .en,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line3 ul .item a .en,
+.container-fluid .box3 .box3-inner .Oceanialist .line3 ul .item a .en,
+.container-fluid .box3 .box3-inner .Antarcticalist .line3 ul .item a .en {
+  color: #959595;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Asialist .line1 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Africalist .line1 ul .item a:hover,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1 ul .item a:hover,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Oceanialist .line1 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Antarcticalist .line1 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Europelist .line2 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Asialist .line2 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Africalist .line2 ul .item a:hover,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2 ul .item a:hover,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Oceanialist .line2 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Antarcticalist .line2 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Europelist .line3 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Asialist .line3 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Africalist .line3 ul .item a:hover,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line3 ul .item a:hover,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line3 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Oceanialist .line3 ul .item a:hover,
+.container-fluid .box3 .box3-inner .Antarcticalist .line3 ul .item a:hover {
+  color: #4C9ED9;
+  text-decoration: underline;
+}
+.container-fluid .box3 .box3-inner .Asialist {
+  height: 445px;
+}
+.container-fluid .box3 .box3-inner .Asialist .line1,
+.container-fluid .box3 .box3-inner .Asialist .line2,
+.container-fluid .box3 .box3-inner .Asialist .line3 {
+  height: 385px;
+}
+.container-fluid .box3 .box3-inner .Europelist {
+  height: 517px;
+}
+.container-fluid .box3 .box3-inner .Europelist .line1,
+.container-fluid .box3 .box3-inner .Europelist .line2,
+.container-fluid .box3 .box3-inner .Europelist .line3 {
+  height: 457px;
+}
+.container-fluid .box3 .box3-inner .Africalist {
+  height: 589px;
+}
+.container-fluid .box3 .box3-inner .Africalist .line1,
+.container-fluid .box3 .box3-inner .Africalist .line2,
+.container-fluid .box3 .box3-inner .Africalist .line3 {
+  height: 529px;
+}
+.container-fluid .box3 .box3-inner .NorthAmericalist {
+  height: 421px;
+}
+.container-fluid .box3 .box3-inner .NorthAmericalist .line1,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line2,
+.container-fluid .box3 .box3-inner .NorthAmericalist .line3 {
+  height: 361px;
+}
+.container-fluid .box3 .box3-inner .SouthAmericalist {
+  height: 205px;
+}
+.container-fluid .box3 .box3-inner .SouthAmericalist .line1,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line2,
+.container-fluid .box3 .box3-inner .SouthAmericalist .line3 {
+  height: 145px;
+}
+.container-fluid .box3 .box3-inner .Oceanialist {
+  height: 301px;
+}
+.container-fluid .box3 .box3-inner .Oceanialist .line1,
+.container-fluid .box3 .box3-inner .Oceanialist .line2,
+.container-fluid .box3 .box3-inner .Oceanialist .line3 {
+  height: 241px;
+}
+.public-footer {
+  height: 186px;
+  background: #323232;
+  width: 100%;
+}
+.public-footer .line {
+  height: 3px;
+  overflow: hidden;
+  background: #25a851;
+}
+.public-footer .footer-inner {
+  margin: 35px auto 0;
+  height: 130px;
+  width: 960px;
+}
+.public-footer .footer-inner .inner-top ul li {
+  float: left;
+  border-left: solid 2px #636363;
+  padding-left: 20px;
+  margin-right: 8px;
+  color: silver;
+  font-size: 14px;
+  font-weight: 700;
+}
+.public-footer .footer-inner .inner-top ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.public-footer .footer-inner .clear {
+  clear: both;
+}
+.public-footer .footer-inner .inner-bottom {
+  font-size: 12px;
+  color: #636363;
+  margin-top: 18px;
+  display: block;
+}
+.public-footer .footer-inner .inner-bottom .love {
+  margin-top: 20px;
+}
+.public-footer .footer-inner .inner-bottom .love dt {
+  float: left;
+  margin-right: 20px;
+}
+.public-footer .footer-inner .inner-bottom .love dd {
+  float: left;
+  color: #636363;
+}
+.public-footer .footer-inner .inner-bottom .love dd:hover a {
+  text-decoration: underline;
+  color: silver;
+}
+.public-footer .footer-inner .inner-bottom .love dd::after {
+  content: '|';
+  margin: 0 4px;
+}
+.footer-fix {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 900;
+  min-width: 980px;
+  background: #0A0A0A;
+  opacity: .8;
+}
+.footer-fix .fix-main {
+  width: 980px;
+  min-width: 980px;
+  margin: 0 auto;
+  height: 70px;
+  position: relative;
+}
+.footer-fix .fix-main img {
+  float: left;
+  margin-left: 60px;
+  opacity: 1;
+}
+.footer-fix .fix-main .fix-img {
+  float: left;
+  width: 100px;
+  height: 30px;
+  margin: 20px 0 0 10px;
+  border: 0;
+  background: url('../img/footer-fix-2.png') no-repeat;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 1;
+}
+.footer-fix .fix-main .img-1:hover {
+  background-position: 0 -30px;
+}
+.footer-fix .fix-main .img-2 {
+  background-position: -100px 0;
+}
+.footer-fix .fix-main .img-2:hover {
+  background-position: -100px -30px;
+}
+.footer-fix .fix-main .img-3 {
+  background-position: -200px 0;
+  width: 110px;
+}
+.footer-fix .fix-main .img-3:hover {
+  background-position: -200px -30px;
+}
+.footer-fix .fix-main span {
+  line-height: 70px;
+  height: 70px;
+  margin-left: 10px;
+  display: block;
+  float: left;
+}
+.footer-fix .fix-main span a {
+  color: #d7d7d7;
+  font-weight: 700;
+}
+.footer-fix .fix-main span a:hover {
+  color: #fff;
+}
+.footer-fix .fix-close {
+  width: 31px;
+  height: 29px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  background: url("../img/footer-fix-close.png") no-repeat right center;
+}
+.footer-fix .fix-close:hover {
+  background-position: left;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<ul id="testUL">
+    <li> index = 0</li>
+    <li> index = 1</li>
+    <li> index = 2</li>
+    <li> index = 3</li>
+</ul>
+<button onclick="randArray()"></button>
+    <div id="1" style="width: 200px;height: 200px;background: red;display: none"></div>
+    <div id="2" style="width: 200px;height: 200px;background: black;display: none"></div>
+    <div id="3" style="width: 200px;height: 200px;background: green;display: none"></div>
+    <div id="4" style="width: 200px;height: 200px;background: blue;display: none"></div>
+<script>
+    var m = [1,2,3,4];
+    function randArray(m, len) {
+        m.sort(function () {
+            return Math.random() - 0.5;
+        });
+        return m.slice(0, len);
+    }
+    var nn = console.log(randArray(m, 4));//这里是随机的出的数字
+    function bounceIn(){
+        document.getElementById(nn).fadeIn();//div的fadeIn事件
+    }
+</script>
+
+<script type="text/javascript">
+    var nodes = document.getElementsByTagName("li");
+    for(i = 0;i<nodes.length;i+= 1){
+        nodes[i].onclick = function(){
+            console.log(i+1);//不用闭包的话，值每次都是4
+            var a = i;
+            return function () {
+                console.log(a)
+            }
+        }(i);
+    }
+
+
+
+
+    var a = 100;
+    function test(){
+
+        console.log(a);
+//        console.log(this.a);
+        var a = 10;
+        console.log(a)
+    }
+    test()
+    console.log(a)
+</script>
+
+
+<!--<script>
+
+    function func(){
+        var a = 2;
+        return function () {
+            console.log(a)
+        }
+    }
+
+      var b = func();
+      b();
+
+
+</script>-->
+
+</body>
+</html>
